@@ -8,7 +8,7 @@ To write a verilog code for 4bit adder and verify the functionality using Test b
  Verify the Functionality using Test-bench.
 
 ## Tool Required: 
-Functional Simulation: nclaunch Simulator (nclaunch) 
+Functional Simulation: nclaunch Simulator (nclaunch)
 
 ## 4-bit Adder Design:
 To construct a 4-bit adder, need to chain together four 1-bit full adders. Each full adder computes the sum and carry for one bit of the two numbers. The carry-out from one adder feeds into the carry-in of the next adder in the sequence. This process adds the two 4-bit numbers bit by bit, with the carry propagating through each stage, resulting in a final sum and carry-out at the end.
