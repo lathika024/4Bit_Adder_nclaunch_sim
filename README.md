@@ -91,6 +91,7 @@ or
 
 	Click the cds.lib file and save the file by clicking on Save option 
 
+![image](https://github.com/user-attachments/assets/3144d5c4-d210-4852-a2a2-e29ebe3e4a0f)
 
 
 ### Fig 5:cds.lib file Creation
