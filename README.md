@@ -15,11 +15,7 @@ To construct a 4-bit adder, need to chain together four 1-bit full adders. Each 
 
 To design a 1-bit full adder, the first step is to create a truth table that represents all possible combinations of the inputs (A, B, and CIN) and the corresponding outputs (Sum(S) and COUT).
 
-![image](https://github.com/user-attachments/assets/716a26b6-a449-42e0-9e2d-cdbaa4b291b9)
-
-Here’s the truth table for a 1-bit full adder:
-
-![tt](https://github.com/user-attachments/assets/0b3ab24f-1d7e-4a01-80ce-5e7406f4082b)
+Here’s the truth table for a 1-bit full adde
 
 ### Fig 1 : Diagram and truth table of full adder
 
@@ -35,7 +31,6 @@ Where ⊕ represents XOR.
    
 COUT=(A&B) | (CIN&(A^B))
 
-![image](https://github.com/user-attachments/assets/7d6fa554-2614-4f19-aa68-65c9e6153caa)
 
 ### Fig 2:Diagram of 4 Bit Adder
 
@@ -59,6 +54,8 @@ Note : File name should be with HDL Extension
 
 */Program to design 4 bit adder by instantiating 1 bit Full adder.also add test bench program */
 Developed by: Register Number*/
+![Screenshot (81)](https://github.com/user-attachments/assets/d44a00aa-9b38-4729-b3a2-8f22932670ae)
+
 
 ## Functional Simulation: 
 
@@ -71,7 +68,8 @@ Developed by: Register Number*/
       (The path of cshrc could vary depending on the installation destination)
       
 	After this you can see the window like below 
-![image](https://github.com/user-attachments/assets/7480c297-d09f-4cc9-9ba5-c732ff1e0a85)
+![image](https://github.com/user-attachments/assets/58095758-de64-4cc2-9c3d-2d8abb329922)
+
 
 ### Fig 3:Invoke the Cadence Environment
 
@@ -84,7 +82,8 @@ or
 •	linux:/> nclaunch& // On subsequent calls to NCVERILOG 
 
 	It will invoke the nclaunch window for functional simulation we can compile,elaborate and simulate it using Multiple Step .
-![image](https://github.com/user-attachments/assets/66a760a2-06b5-49fd-9c91-4e5ecc774f48)
+
+![Screenshot (83)](https://github.com/user-attachments/assets/c86de1dd-d5f6-45d5-97e4-7e6eb4db5b84)
 
 ### Fig 4:Setting Multi-step simulation
 
@@ -92,7 +91,7 @@ or
 
 	Click the cds.lib file and save the file by clicking on Save option 
 
-![image](https://github.com/user-attachments/assets/99b5b2ee-16e6-49b4-b4c0-5da9fa34d627)
+
 
 ### Fig 5:cds.lib file Creation
 
@@ -104,7 +103,6 @@ or
 
 •	A Click “OK” in the “nclaunch: Open Design Directory” window as shown in below figure 
 
-![image](https://github.com/user-attachments/assets/781b297a-11e9-4140-89c5-ee3b0d15bbd4)
 
 ### Fig 6: Selection of Don’t include any libraries
 
@@ -115,9 +113,11 @@ or
 	Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation .
 
 	To perform the function simulation, the following three steps are involved Compilation, Elaboration and Simulation. 
+![WhatsApp Image 2024-11-14 at 13 29 13_9b30a2ff](https://github.com/user-attachments/assets/8b6769f6-8952-4a8a-9887-88f891421408)
+
 
 ### Fig 7: Nclaunch Window
-![image](https://github.com/user-attachments/assets/60e23e87-11f2-4c88-8832-66cf83a160b2)
+
 
 ## Step 1: Compilation:– Process to check the correct Verilog language syntax and usage 
 
@@ -135,6 +135,9 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 Left side select the file and in Tools : launch verilog compiler with current selection will get enable. Click it to compile the code 
 
 Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation
+![image](https://github.com/user-attachments/assets/06fe682f-6f12-48f1-8d17-e699afbaf8fd)
+
+
 
 ### Fig 8: Compiled database in worklib
 
@@ -144,7 +147,7 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 	Select the test bench and compile it. It will come under worklib. Under Worklib you can see the module and test-bench. 
 
 	The cds.lib file is an ASCII text file. It defines which libraries are accessible and where they are located. It contains statements that map logical library names to their physical directory paths. For this Design, you will define a library called “worklib”
-![image](https://github.com/user-attachments/assets/612c4f0a-cd7b-4289-8b65-b414b8c3e919)
+![Screenshot (84)](https://github.com/user-attachments/assets/2c0c087f-0bdd-4da7-b576-20d6e3b774f3)
 
 ## Step 2: Elaboration:– To check the port connections in hierarchical design 
 	Inputs: Top level design / test bench Verilog codes 
@@ -161,8 +164,10 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
    
 	After elaboration the file will come under snapshot. Select the test bench and elaborate it.
 
+
 ### Fig 9: Elaboration Launch Option
-![image](https://github.com/user-attachments/assets/534e82f3-e136-4cc6-bbbc-9266dacc7953)
+![image](https://github.com/user-attachments/assets/4cd27b5a-ac28-4720-9fce-1d560715604c)
+
 
 ## Step 3: Simulation: – Simulate with the given test vectors over a period of time to observe the output behaviour. 
 
