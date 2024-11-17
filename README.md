@@ -6,7 +6,6 @@ To write a verilog code for 4bit adder and verify the functionality using Test b
  Write Verilog Code
 
  Verify the Functionality using Test-bench.
-
 ## Tool Required: 
 Functional Simulation: nclaunch Simulator (nclaunch)
 
